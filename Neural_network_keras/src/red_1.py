@@ -6,6 +6,11 @@ from keras.layers import Dense, Input #type: ignore
 from keras.utils import to_categorical #type: ignore
 from keras.datasets import mnist #type: ignore
 def Neural_network_keras():
+    """
+    Builds, trains, and evaluates a neural network using Keras and the MNIST dataset.  
+    The model consists of a hidden layer with 512 neurons (ReLU) and an output layer with 10 neurons (Softmax).  
+    Data is normalized, reshaped, and trained for 10 epochs before evaluation.  
+    """
     # Training data
     (train_data_x, train_labels_y), (test_data_x, test_labels_y) = mnist.load_data() # Data: input data, and labels: used to calculate the loss function
 
